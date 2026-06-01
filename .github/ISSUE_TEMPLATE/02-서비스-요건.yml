@@ -1,0 +1,40 @@
+name: 서비스 요건
+description: 사용자 가치와 제품 범위를 기준으로 서비스 요건을 정리합니다.
+title: "[기획] "
+labels: ["기획", "요건"]
+body:
+  - type: textarea
+    id: user_problem
+    attributes:
+      label: 사용자 문제
+      description: 사용자가 겪는 문제를 서비스 관점으로 적어주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: 목표
+      description: 이 요건 정리로 결정하고 싶은 내용을 적어주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: source_docs
+    attributes:
+      label: 참고 문서
+      description: pdfrend 문서나 PDForge docs 링크를 적어주세요.
+    validations:
+      required: false
+  - type: textarea
+    id: requirements
+    attributes:
+      label: 후보 요건
+      description: 현재 생각하는 요건을 목록으로 적어주세요.
+    validations:
+      required: false
+  - type: textarea
+    id: done
+    attributes:
+      label: 완료 조건
+      description: 확정 문서, 표, 회고 등 완료 기준을 적어주세요.
+    validations:
+      required: true

@@ -1,0 +1,40 @@
+name: 문서 작업
+description: 문서 정리, 학습 문서, 정책 문서, 회고 문서를 작성합니다.
+title: "[문서] "
+labels: ["문서"]
+body:
+  - type: textarea
+    id: background
+    attributes:
+      label: 배경
+      description: 왜 이 문서 작업이 필요한지 적어주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: 목표
+      description: 완료되면 어떤 문서가 생기거나 바뀌어야 하는지 적어주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: 참고 문서
+      description: 에이전트가 읽어야 할 docs 문서나 외부 링크를 적어주세요.
+    validations:
+      required: false
+  - type: textarea
+    id: done
+    attributes:
+      label: 완료 조건
+      description: 이 Issue가 끝났다고 판단할 기준을 적어주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: excluded
+    attributes:
+      label: 제외 범위
+      description: 이번 작업에서 하지 않을 일을 적어주세요.
+    validations:
+      required: false
